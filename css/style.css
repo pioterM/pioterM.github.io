@@ -1,0 +1,95 @@
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
+:root{
+	--max_width_container: 800px;
+}
+}
+*{
+	outline-style: none !important;
+}
+
+.container{
+	/*#FFB573 943100*/
+	background: radial-gradient(circle, #FF732B, #c04000);
+	border: 2px solid #A64E00;
+	border-radius: 10px;
+
+	max-width: var(--max_width_container, 800px);
+	min-width: 300px;
+	margin: 30px auto;
+	min-height: 600px;
+	padding: 10px;
+	box-shadow: 0 0 10px black;
+}
+@media (max-width: 800px){
+	.container{
+		margin: 30px;
+	}
+}
+@media (max-width: 500px){
+	.top{
+		display: flex;
+		justify-content: center;
+	}
+}
+.top{
+	display: flex;
+	margin-bottom: 30px;
+}
+a.logo_wrapper{
+	background-color: #fff;
+	box-shadow: 0 0 5px black;
+	display: block;
+	border: 2px solid ;
+	border-radius: 10px;
+	padding: 5px;
+	min-width: 100px;
+	margin: 10px;
+}
+.content{
+
+}
+.containerS{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 500px;
+	text-align: center;
+}
+.password, .email{
+	color: #000;
+	background-image: linear-gradient(to top, #21FFEF, #03AB9F);
+	font-size: 30px;
+	padding: 5px;
+	border-radius: 5px;
+	font-family: "Source Code Pro", monospace;
+	font-weight: 300;
+	/*text-shadow: 2px 2px black;*/
+}
+.password{
+}
+.congratulations{
+	margin: 0 auto;
+	max-width: 500px;
+	font-family: "Balsamiq Sans", Helvetica, serif;
+}
+.email::after{
+	content: "attr(data-title)";
+	display: none;
+	position: absolute;
+	bottom: 130%;
+	left: 0px;
+	background-color: #fff;
+	color: #3aaeda;
+	padding: 5px;
+	text-align: center;
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.16);
+	box-shadow: 0 1px 1px rgba(0,0,0,.16);font-size: 12px;
+}
+/* Добавляем свойство, чтобы при наведении на элемент плашка с подсказкой появилась */
+.email::after:hover{
+	display: block;
+}
