@@ -79,6 +79,7 @@ a.logo_wrapper{
 	font-weight: 300;
 	/*text-shadow: 2px 2px black;*/
 	box-shadow: 0px 0px 5px black;
+	transition: transform .2s;
 }
 .password{
 }
@@ -103,12 +104,18 @@ a.logo_wrapper{
 	text-shadow: 1px 1px 1px;
 	box-shadow: 0px 0px 15px black;
 	margin: 40px;
-	transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s, transform .2s;
 }
 .go-button:hover{
 	box-shadow: 0px 0px 10px black;
 	background-image: linear-gradient(to bottom, #cca700, #eb0800);
+	transform: translateY(1px);
 }
 .go-button:active{
 	box-shadow: 0px 0px 20px #21FFEF;
+	transform: translateY(2px);
+}
+.password:hover, .email:hover{
+	transform: translateY(1px);
+	cursor: pointer;
 }
